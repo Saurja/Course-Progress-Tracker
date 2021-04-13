@@ -5,7 +5,7 @@ import "./styles/app.scss";
 function App() {
     return (
         <div className="App">
-            <h1>CSE PROGRESS TRACKER</h1>
+            <h1>Data Structures & Algorithms Tracker 💻</h1>
             <Courses />
         </div>
     );

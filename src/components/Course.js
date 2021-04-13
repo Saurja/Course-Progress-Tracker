@@ -6,16 +6,18 @@ const Course = ({ courses }) => {
             {courses.map((course) => (
                 <div className="course" key={course.id}>
                     <div className="left">
-                        <h2>{course.title}</h2>
-                        <p>
-                            [{course.completed}/{course.total}]
-                        </p>
-                        <a href="/course">
-                            <button>Go to Tracker</button>
-                        </a>
+                        <h2>
+                            <strong>
+                                {course.title} - {course.completed}/
+                                {course.total}
+                            </strong>
+                        </h2>
+                        <h1>{(course.completed / course.total) * 100}%</h1>
                     </div>
                     <div className="right">
-                        <h1>{(course.completed / course.total) * 100}%</h1>
+                        <a href="/course">
+                            <button>GO</button>
+                        </a>
                     </div>
                 </div>
             ))}
