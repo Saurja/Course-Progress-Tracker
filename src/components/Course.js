@@ -1,23 +1,25 @@
 import "../styles/courses/courses.scss";
 
-const Course = ({ Title, Completed, Total }) => {
-    let progress = (Completed / Total) * 100;
-    console.log(progress);
+const Course = ({ courses }) => {
     return (
-        <div className="course">
-            <div className="left">
-                <h2>{Title}</h2>
-                <p>
-                    [{Completed}/{Total}]
-                </p>
-                <a href="/course">
-                    <button>Go to Tracker</button>
-                </a>
-            </div>
-            <div className="right">
-                <h1>{Math.ceil(progress)}%</h1>
-            </div>
-        </div>
+        <>
+            {courses.map((course) => (
+                <div className="course" key={course.id}>
+                    <div className="left">
+                        <h2>{course.title}</h2>
+                        <p>
+                            [{course.completed}/{course.total}]
+                        </p>
+                        <a href="/course">
+                            <button>Go to Tracker</button>
+                        </a>
+                    </div>
+                    <div className="right">
+                        <h1>{(course.completed / course.total) * 100}%</h1>
+                    </div>
+                </div>
+            ))}
+        </>
     );
 };
 

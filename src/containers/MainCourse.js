@@ -1,16 +1,19 @@
 import Course from "../components/Course";
 
+import { useState } from "react";
+
 import "../styles/courses/mainCourse.scss";
 
 const Courses = () => {
+    let [courses, setCourses] = useState([
+        { id: 1, title: "DSA", completed: 10, total: 20 },
+        { id: 2, title: "OS", completed: 17, total: 20 },
+        { id: 3, title: "DBMS", completed: 12, total: 20 },
+    ]);
+
     return (
         <div className="all--courses">
-            <Course Title="DSA" Completed={10} Total={20} />
-            <Course Title="Operating System" Completed={2} Total={30} />
-            <Course Title="DSA" Completed={10} Total={20} />
-            <Course Title="DSA" Completed={10} Total={20} />
-            <Course Title="DSA" Completed={10} Total={20} />
-            <Course Title="DSA" Completed={10} Total={20} />
+            <Course courses={courses} />
         </div>
     );
 };
