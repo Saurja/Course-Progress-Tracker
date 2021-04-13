@@ -4,7 +4,6 @@
     align-items: center;
 
     padding: 1em 2em;
-    margin: 1em 0em;
     border-radius: 1em;
 
     background-color: #7289da;
@@ -18,12 +17,14 @@
 
     a {
         button {
+            height: 2em;
+            border: none;
+            border-radius: 1em;
+
             font-weight: 900;
 
             background-color: #2c2f33;
-            color: #99aab5;
-            height: 2em;
-            border: none;
+            color: #ffffff;
         }
         button:hover {
             background-color: #99aab5;

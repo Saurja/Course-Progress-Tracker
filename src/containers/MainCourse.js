@@ -7,6 +7,10 @@ const Courses = () => {
         <div className="all--courses">
             <Course Title="DSA" Completed={10} Total={20} />
             <Course Title="Operating System" Completed={2} Total={30} />
+            <Course Title="DSA" Completed={10} Total={20} />
+            <Course Title="DSA" Completed={10} Total={20} />
+            <Course Title="DSA" Completed={10} Total={20} />
+            <Course Title="DSA" Completed={10} Total={20} />
         </div>
     );
 };

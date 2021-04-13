@@ -11,7 +11,7 @@ const Course = ({ Title, Completed, Total }) => {
                     [{Completed}/{Total}]
                 </p>
                 <a href="/course">
-                    <button>Go to course</button>
+                    <button>Go to Tracker</button>
                 </a>
             </div>
             <div className="right">
