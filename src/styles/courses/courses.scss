@@ -1,0 +1,50 @@
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em 2em;
+    margin: 1em 0em;
+    border-radius: 1em;
+
+    background-color: #7289da;
+    color: #2c2f33;
+
+    h2 {
+        margin: 0px;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    a {
+        button {
+            font-weight: 900;
+
+            background-color: #2c2f33;
+            color: #99aab5;
+            height: 2em;
+            border: none;
+        }
+        button:hover {
+            background-color: #99aab5;
+            color: #2c2f33;
+        }
+    }
+
+    .right {
+        padding: 0em;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .course {
+        margin: 0.5em;
+        h2 {
+            font-size: 1em;
+        }
+        p {
+            margin: 0.5rem 0rem;
+        }
+    }
+}
