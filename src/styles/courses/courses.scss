@@ -20,7 +20,8 @@
     }
 
     p {
-        margin: 0.5rem 0rem;
+        margin: 0px;
+        margin-bottom: 0.5rem;
     }
 
     a {
@@ -33,10 +34,13 @@
 
             background-color: #2c2f33;
             color: #ffffff;
+
+            transition: all 0.5s;
         }
         button:hover {
             background-color: #99aab5;
             color: #2c2f33;
+            transition: all 0.5s;
         }
     }
 
@@ -46,11 +50,11 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .course {
         margin: 0.5em;
         h2 {
-            font-size: 1em;
+            font-size: 1.5em;
         }
     }
 }
